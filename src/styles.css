@@ -1,0 +1,154 @@
+.introduction h1{
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+.introduction p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+.services a{
+    display: inline-block;
+    background-color: #333;
+    padding: 50px;
+    margin: 70px;
+    margin-top: 25px;
+    color: pink; 
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none ;
+}
+
+.services a:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* add hover affect to the button */
+.button{
+    text-align: center;
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+section{
+    margin-bottom: 50px;
+}
+body{
+    background-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+footer a {
+    color: pink;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+footer p{
+    color: pink;
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popup-close-button{
+    background-color: pink;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+/* eachPage.html */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-height: 80vh; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

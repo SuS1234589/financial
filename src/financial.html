@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Name</title>
+</head>
+<body>
+<!-- Introduction -->
+
+    <div class="introduction">
+        <h1>NAME</h1>
+        <p>some introfuctory stuff and a picture</p>
+    </div>
+
+    <!-- Services 
+    All of the P's will be in a card like thing for the website-->
+    <section class="our-services">
+        <div class="services">
+            <h3 style="margin-top: 70px;">Services</h3>
+            <a href="#" id="build" onclick="togglePopup()">something 1</a>
+            <a href="">something 2</a>
+            <a href="">Something 1</a>
+            <a href="">Something 2</a>
+            <div id="popup">
+                <h2>Something Something</h2>
+                <p>Some stuff</p>
+                <div id="build" onclick="togglePopup()" class="popup-close-button">Close</div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var popup = document.getElementById("popup");
+            // Define the toggle function
+            function togglePopup() {                
+                popup.classList.toggle('active');
+            }
+            window.togglePopup=togglePopup;
+            // Assign the toggle function to the window object so it can be called from inline event handlers
+        });
+    </script>
+
+    <section class="schedule-meeting">
+        <div class="meeting">
+            <h3>Schedule a Meeting</h3>
+            <div class="container">
+                <!-- set up calendly the link does not work -->
+                <a href="https://calendly.com/noreplykm944" class="button">Scedhule a meeting today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact-us">
+        <h4>Contact Information</h4>
+        <p>Emial: mittal.ehsaas@gmail.com</p><p>Phone: 123-456-7890</p>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    
+
+</body>
+</html>
