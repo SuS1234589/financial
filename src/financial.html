@@ -12,8 +12,12 @@
 <body>
 <!-- Introduction -->
     <div class="introduction">
-        <h1>NAME</h1>
-        <p>some introfuctory stuff and a picture</p>
+        <div class="logo-name-container">
+        <h1>KAVITA MITTAL</h1>
+        <img src="../channels4_profile.jpg" alt="WFG LOGO" class="logo">
+    </div>
+        <p>FINANCIAL PROFESSIONAL</p>
+        
     </div>
 
     <!-- Services 
@@ -21,33 +25,55 @@
     <section class="our-services">
         <div class="services">
             <h3 style="margin-top: 70px;">Services</h3>
-            <a href="#" onclick="togglePopup()">something 1</a>
-            <a href="#" onclick="togglePopup()" >something 2</a>
-            <a href="#" onclick="togglePopup()" >Something 1</a>
-            <a href="#" onclick="togglePopup()" >Something 2</a>
-
-            <div id="popup">
-                <h2>Something Something</h2>
-                <p>Some stuff</p>
-                <div onclick="togglePopup()" class="popup-close-button">Close</div>
+            <div class="first-row-service">
+                <a href="#" onclick="togglePopup('popup_1')" >RETIRMENT PLANS</a>
+                <a href="#" onclick="togglePopup('popup_2')" >COLLEGE FUNDING PLANS</a>
+                <a href="#" onclick="togglePopup('popup_3')" >BUSINESS STRATERGIES</a>
             </div>
 
-            <div id="popup">
-                <h2>Something Something</h2>
-                <p>Some stuff</p>
-                <div onclick="togglePopup()" class="popup-close-button">Close</div>
+            <div class="second-row-service">
+                <a href="#" onclick="togglePopup('popup_5')" >BUSINESS OPPORTUNITY</a>
+                <a href="#" onclick="togglePopup('popup_6')" >DEBT CONSOLIDATION</a>
+                <a href="#" onclick="togglePopup('popup_4')" >WILL AND ESTATE PLANNING</a>
             </div>
 
-            <div id="popup">
+            <div id="popup_1">
                 <h2>Something Something</h2>
-                <p>Some stuff</p>
-                <div onclick="togglePopup()" class="popup-close-button">Close</div>
+                <p>ANNUITIES</p>
+                <div onclick="togglePopup('popup_1')" class="popup-close-button">Close</div>
             </div>
 
-            <div id="popup">
+            <div id="popup_2">
                 <h2>Something Something</h2>
                 <p>Some stuff</p>
-                <div onclick="togglePopup()" class="popup-close-button">Close</div>
+                <div onclick="togglePopup('popup_2')" class="popup-close-button">Close</div>
+            </div>
+
+            <div id="popup_3">
+                <h2>Something Something</h2>
+                <p>Some stuff</p>
+                <div onclick="togglePopup('popup_3')" class="popup-close-button">Close</div>
+            </div>
+
+
+            <div id="popup_4">
+                <h2>Something Something</h2>
+                <p>Some stuff</p>
+                <div onclick="togglePopup('popup_4')" class="popup-close-button">Close</div>
+            </div>
+
+
+            <div id="popup_5">
+                <h2>Something Something</h2>
+                <p>Some stuff</p>
+                <div onclick="togglePopup('popup_5')" class="popup-close-button">Close</div>
+            </div>
+
+
+            <div id="popup_6">
+                <h2>Something Something</h2>
+                <p>Some stuff</p>
+                <div onclick="togglePopup('popup_6')" class="popup-close-button">Close</div>
             </div>
 
         </div>
@@ -56,19 +82,20 @@
 
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
-            var popup = document.getElementById("popup");
-            // Define the toggle function
-            function togglePopup() {                
+            function togglePopup(id) {                
+                var popup = document.getElementById(id);
                 popup.classList.toggle('active');
             }
             window.togglePopup=togglePopup;
-            // Assign the toggle function to the window object so it can be called from inline event handlers
         });
     </script>
+
 
     <section class="schedule-meeting">
         <div class="meeting">
             <h3>Schedule a Meeting</h3>
+            <h4>FREE CONSOLTATION!</h4>
+            <p>DISCOVER MORE ABOUT WFG AND SEIZE THE OPPORTUNITY TO JOIN OUR TEAM, WHERE YOU CAN ACHIEVE FINANCIAL SUCCESS.</p>
             <div class="container">
                 <!-- set up calendly the link does not work -->
                 <a href="https://calendly.com/noreplykm944" class="button">Scedhule a meeting today</a>
@@ -79,7 +106,7 @@
     <hr>
     <footer class="contact-us">
         <h4>Contact Information</h4>
-        <p>Emial: info.example@gmai.coom</p><p>Phone: 123-456-7890</p>
+        <p>Email: ehsaasgloballlc@gmail.com</p><p>Phone: +1 (814)-600-5527</p>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>

@@ -18,6 +18,11 @@ html body{
     background-color: #333;
     color: white;
 }
+
+.services{
+    justify-content: space-between;
+}
+
 .services a{
     display: inline-block;
     background-color: #333;
@@ -33,10 +38,16 @@ html body{
 }
 
 .services a:hover{
-    background-color: white;
+    background-color: pink;
     color: #333;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-row-service,
+.second-row-service {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -57,7 +68,7 @@ html body{
 }
 
 .button:hover{
-    background-color: white;
+    background-color: pink;
     color: #333;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
@@ -93,7 +104,7 @@ footer p{
     color: pink;
 }
 
-#popup{
+#popup, #popup_1, #popup_2, #popup_3, #popup_4, #popup_5, #popup_6 {
     position: fixed;
     top: 40%;
     left: 50%;
@@ -110,7 +121,7 @@ footer p{
     transition: 0.5s;
 }
 
-#popup.active{
+#popup.active, #popup_1.active, #popup_2.active, #popup_3.active, #popup_4.active, #popup_5.active, #popup_6.active{
     top: 50%;
     visibility: visible;
     opacity: 1;
@@ -133,3 +144,24 @@ hr{
     background-color: white;
     margin-bottom: 1px;
 }
+
+.logo-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will align the items vertically center */
+  }
+  
+  .logo {
+    margin-top: 20px;
+    width: 70px; /* Adjust the width as per your requirement */
+    height: 70px; /* Adjust the height as per your requirement */
+    margin-left: 10px; /* Add some space between the name and the logo */
+  }
+
+  .meeting h4 {
+    text-align: center;
+  }
+
+  .meeting p{
+    text-align: center;
+  }
